@@ -1,0 +1,22 @@
+{
+  "name": "win-98",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "gulp && gulp watch & node ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "98.css": "^0.1.2",
+    "alpinejs": "^2.3.0",
+    "draggable": "^4.2.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "express": "^4.17.1",
+    "watch": "^1.0.2",
+    "gulp-concat": "^2.6.1"
+  }
+}
