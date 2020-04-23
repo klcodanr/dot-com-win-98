@@ -1,6 +1,7 @@
 html {
   background: url(../img/wallpaper.jpg) no-repeat center center fixed;
   font-family: sans-serif;
+  overflow: hidden;
 }
 
 .icon {
@@ -63,8 +64,10 @@ html {
   resize: both;
   overflow: auto;
   margin: 32px;
-  height: 50vh;
-  width: 50%;
+  min-width: 320px;
+  min-height: 300px;
+  height: 600px;
+  width: 600px;
 }
 
 .window.has-main-content {
@@ -80,7 +83,7 @@ html {
 
 .window.has-main-content .inset {
   flex-grow: 1;
-  display:flex;
+  display: flex;
 }
 
 iframe {
