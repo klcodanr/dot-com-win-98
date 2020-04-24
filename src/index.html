@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/app.css" />
   </head>
 
-  <body x-data="{open: false}">
+  <body x-data="{open: false, url: 'https://www.danklco.com'}">
     <main class="is-hidden">
       <a href="#" class="icon" @dblclick="open = true">
         <img src="img/ie.png" />
@@ -44,15 +44,16 @@
             <div class="field-row has-full-input">
               <label for="address">Address</label>
               <input
+                x-on:keydown.enter="url = $event.target.value"
                 id="address"
                 class="menu-grow"
                 type="text"
-                value="https://www.danklco.com"
+                :value="url"
               />
             </div>
           </div>
           <div class="inset">
-            <iframe class="web-frame" src="https://www.danklco.com"></iframe>
+            <iframe class="web-frame" :src="url"></iframe>
           </div>
         </div>
       </div>
